@@ -5,7 +5,9 @@ const componentRoutes = require('./routes/componentRoutes');
 const app = express();
 app.use(bodyParser.json());
 
-
+app.get("/", (req,res)=>{
+  res.send("Hello from server")
+})
 // API routes
 app.use('/api', componentRoutes);
 
