@@ -8,7 +8,7 @@ exports.getComponentCode = (req, res) => {
 
   fs.readFile(componentPath, 'utf8', (err, data) => {
     if (err) {
-      return res.status(404).send('Component not found');
+      return res.status(404).send('Component notttu found');
     }
     res.send(data);
   });
